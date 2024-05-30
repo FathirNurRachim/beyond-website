@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Icon Link -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Beyond Website</title>
+
+</head>
+
+<body class="bg-color-body font-Poppins scroll-smooth">
+    <!-- Navbar Desktop -->
+    <nav class="w-full fixed top-0 left-0 z-50 py-9 bg-color-body">
+        <div class="container flex justify-between items-center">
+            <!-- Logo -->
+            <a class="text-3xl" href="#">
+                <img src="Assets/logo.png" alt="Logo">
+            </a>
+            <!-- Humberger Menu -->
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center p-3">
+                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Navlist Desktop -->
+            <ul class="hidden static lg:flex lg:mx-auto lg:items-center lg:gap-[38px]">
+                <li>
+                    <a class="relative text-base text-color-sub-text hover:text-color-sub-text font-medium" href="#">Home</a>
+                </li>
+                <li>
+                    <a class="relative group text-base text-[#635F85] hover:text-color-sub-text font-medium" href="#">Why us?
+                        <div class="absolute w-4 h-[3px] bg-color-sub-text scale-x-0 group-hover:scale-x-100 transition-transform"></div>
+                    </a>
+                </li>
+                <li>
+                    <a class="relative group text-base text-[#635F85] hover:text-color-sub-text font-medium" href="#">Features
+                        <div class="absolute w-4 h-[3px] bg-color-sub-text scale-x-0 group-hover:scale-x-100 transition-transform"></div>
+                    </a>
+                </li>
+                <li>
+                    <a class="relative group text-base text-[#635F85] hover:text-color-sub-text font-medium" href="#">Pricing
+                        <div class="absolute w-4 h-[3px] bg-color-sub-text scale-x-0 group-hover:scale-x-100 transition-transform"></div>
+                    </a>
+                </li>
+                <li>
+                    <a class="relative group text-base text-[#635F85] hover:text-color-sub-text font-medium" href="#">Contact
+                        <div class="absolute w-4 h-[3px] bg-color-sub-text scale-x-0 group-hover:scale-x-100 transition-transform"></div>
+                    </a>
+                </li>
+            </ul>
+            <!-- Button Navbar Desktop -->
+            <div class="hidden lg:inline-block">
+                <a class="lg:ml-auto lg:mr-3 py-3 px-[34px] text-base font-medium text-color-sub-text border-2 border-[#E7E7E7] rounded-full transition duration-200" href="#">Login</a>
+                <a class="py-3 px-[34px] bg-color-blue text-base text-white font-medium rounded-full" href="#">Sign up</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Navbar Mobile -->
+	<div class="navbar-menu relative z-50 hidden">
+		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-color-body border-r overflow-y-auto">
+			<div class="flex items-center mb-8">
+                <!-- Logo -->
+				<a class="mr-auto text-3xl font-bold leading-none" href="#">
+					<img src="Assets/logo.png" alt="Logo">
+				</a>
+                <!-- Navbar close -->
+				<button class="navbar-close">
+					<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+					</svg>
+				</button>
+			</div>
+            <!-- Navlist Mobile -->
+			<div>
+				<ul>
+					<li class="mb-1">
+						<a class="block relative group p-4 text-base font-medium text-[#635F85] hover:text-color-sub-text" href="#">Home
+                            <div class="absolute w-4 h-[3px] bg-color-sub-text scale-x-0 group-hover:scale-x-100 transition-transform"></div>
+                        </a>
+					</li>
+					<li class="mb-1">
+						<a class="block relative group p-4 text-base font-medium text-[#635F85] hover:text-color-sub-text" href="#">Why us?
+                            <div class="absolute w-4 h-[3px] bg-color-sub-text scale-x-0 group-hover:scale-x-100 transition-transform"></div>
+                        </a>
+					</li>
+					<li class="mb-1">
+						<a class="block relative group p-4 text-base font-medium text-[#635F85] hover:text-color-sub-text" href="#">Features
+                            <div class="absolute w-4 h-[3px] bg-color-sub-text scale-x-0 group-hover:scale-x-100 transition-transform"></div>
+                        </a>
+					</li>
+					<li class="mb-1">
+						<a class="block relative group p-4 text-base font-medium text-[#635F85] hover:text-color-sub-text" href="#">Pricing
+                            <div class="absolute w-4 h-[3px] bg-color-sub-text scale-x-0 group-hover:scale-x-100 transition-transform"></div>
+                        </a>
+					</li>
+					<li class="mb-1">
+						<a class="block relative group p-4 text-base font-medium text-[#635F85] hover:text-color-sub-text" href="#">Contact
+                            <div class="absolute w-4 h-[3px] bg-color-sub-text scale-x-0 group-hover:scale-x-100 transition-transform"></div>
+                        </a>
+					</li>
+				</ul>
+			</div>
+            <!-- Button Navbar Mobile -->
+			<div class="mt-auto">
+				<div class="pt-6">
+					<a class="block px-4 py-3 mb-3 text-base text-center font-medium text-color-sub-text border-2 border[#E7E7E7] rounded-full" href="#">Login</a>
+					<a class="block px-4 py-3 mb-2 text-base text-center font-medium text-color-body bg-color-blue rounded-full" href="#">Sign Up</a>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+
+
+
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section>
+            <!-- Flex Container -->
+            <div class="container mt-[109px] w-full lg:min-h-[70vh] flex flex-col-reverse lg:flex-row gap-9 justify-center items-center">
+                <!-- Left -->
+                <div class="md:text-center lg:text-start lg:w-3/5">
+                    <!-- Text Hero -->
+                    <h3 class="text-color-sub-text text-xs font-medium tracking-[5px]">AWARD WINNING COMPANY</h3>
+                    <h1 class="text-color-main-text text-[48px] font-bold pt-4">We Are The Best Digital Marketing</h1>
+                    <p class="text-color-description text-base font-medium pt-6">
+                        You need to get positive results when you spend hard earned revenue and time on any marketing effort.
+                        Great returns on marketing and promotions.
+                    </p>
+                    <!-- Button Hero -->
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center md:justify-center lg:justify-start mt-[50px] gap-9">
+                        <div>
+                            <a class="py-3 px-[34px] bg-color-blue text-base text-white font-medium rounded-full" href="#">Get Started</a>
+                        </div>
+                        <div class="flex items-center gap-9">
+                            <a class="bg-color-body rounded-full py-3 px-[15px] shadow-md" href="#"><i class="ri-play-fill text-color-sub-text text-2xl"></i></a>
+                            <a class="text-base font-medium text-black" href="#">Watch Video</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right -->
+                <div class="lg:w-1/2 xl:w-5/6">
+                    <img src="Assets/Hero-Image.png" alt="Hero">
+                </div>
+            </div>
+
+            <!-- Logo Brand -->
+            <section class="bg-color-light py-20 mt-10 lg:mt-0">
+                <!-- Flex Container -->
+                <div class="container flex flex-wrap items-center justify-center gap-6 lg:justify-between">
+                    <div>
+                        <img class="w-[109px] h-[31px]" src="Assets/Logo-Brand/Google.png" alt="Logo-Brand">
+                    </div>
+                    <div>
+                        <img class="w-[136px]" src="Assets/Logo-Brand/Slack.png" alt="Logo-Brand">
+                    </div>
+                    <div>
+                        <img class="w-[154px] h-[39px]" src="Assets/Logo-Brand/Agworld.png" alt="Logo-Brand">
+                    </div>
+                    <div>
+                        <img class="w-[141px]" src="Assets/Logo-Brand/RioTinto.png" alt="Logo-Brand">
+                    </div>
+                    <div>
+                        <img class="w-[131px] h-[30px]" src="Assets/Logo-Brand/Heroku.png" alt="Logo-Brand">
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+
+
+
+
+
+        <!-- Service -->
+        <section>
+            <!-- Flex Container -->
+            <div class="container mt-[140px]">
+                <!-- Text Heading -->
+                <div class="text-center">
+                    <h3 class="text-color-sub-text text-xs font-medium tracking-[5px]">AWARD WINNING COMPANY</h3>
+                    <h2 class="text-color-main-text text-[40px] font-bold pt-6 sm:w-[426px] mx-auto">Grow Your Business With Ringo</h2>
+                    <p class="text-color-description text-base font-medium pt-8">
+                        tempus, lectus risus In' perdiel tellus, sed faucibus ipsum ipsurn nun neque.
+                    </p>
+                </div>
+
+                <!-- Flex Wrap Card -->
+                <div class="mt-[73px] flex flex-wrap justify-center gap-8">
+                    <!-- Card Content -->
+                    <article class="w-[350px] py-10 px-10 pb-20 border-2 border-[#EDEFF6] rounded-xl">
+                        <div class="flex justify-center">
+                            <img src="Assets/Services/Search Icon.png" alt="Service">
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-color-main-text text-xl pt-6 font-semibold">Search Engine</h4>
+                            <p class="text-color-description text-sm pt-4 font-medium">
+                                Twit are excet Frond, rnatie boy 
+                                grub it's tell gone to pot MI Mrs nut 
+                                butts horse play blow
+                            </p>
+                        </div>
+                    </article>
+                    <article class="w-[350px] py-10 px-10 pb-20 border-2 border-[#EDEFF6] rounded-xl">
+                        <div class="flex justify-center">
+                            <img src="Assets/Services/Email marketing Icon.png" alt="Service">
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-color-main-text text-xl pt-6 font-semibold">Email Marketing</h4>
+                            <p class="text-color-description text-sm pt-4 font-medium">
+                                Twit are excet Frond, rnatie boy 
+                                grub it's tell gone to pot MI Mrs nut 
+                                butts horse play blow
+                            </p>
+                        </div>
+                    </article>
+                    <article class="w-[350px] py-10 px-10 pb-20 border-2 border-[#EDEFF6] rounded-xl">
+                        <div class="flex justify-center">
+                            <img src="Assets/Services/Marketing icon.png" alt="Service">
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-color-main-text text-xl pt-6 font-semibold">Media Marketing</h4>
+                            <p class="text-color-description text-sm pt-4 font-medium">
+                                Twit are excet Frond, rnatie boy 
+                                grub it's tell gone to pot MI Mrs nut 
+                                butts horse play blow
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <!-- Marketing Agency -->
+        <section>
+            <!-- Flex Container -->
+            <div class="container mt-[110px] flex flex-col lg:flex-row items-center gap-9">
+                <!-- Left -->
+                <div class="flex items-center justify-center w-full lg:w-1/2">
+                    <img class="object-cover w-full lg:max-w-2xl" src="Assets/Marketing-Image.png" alt="glasses photo">
+                </div>
+                
+                <!-- Right -->
+                <div class="w-full lg:w-1/2 lg:max-w-lg md:text-center lg:text-start">
+                    <!-- Text Hero -->
+                    <h3 class="text-color-sub-text text-xs font-semibold tracking-[5px]">WHO WE ARE</h3>
+                    <h2 class="text-color-main-text text-[40px] font-bold pt-4">Top #1 Marketing Agency in the World</h2>
+                    <p class="text-color-description text-base font-medium pt-6">
+                        Nunc venenalis Iorem sed risus trlstque sent per. Duls porta,  
+                        rutruni tempus, lectus risus imDerdiet tellus, sed faucibus sum ipsum ncn neque. 
+                        Curubilu r eleirend, erut ullamcorper porta. eras turpis.  
+                    </p>
+                    <div class="mt-9">
+                        <a class="py-3 px-[34px] bg-color-blue text-base text-white font-medium rounded-full" href="#">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Realize Business -->
+        <section class="bg-color-light pb-28 lg:pt-2 mt-[120px]">
+            <!-- Flex Container -->
+            <div class="container mt-[110px] flex flex-col-reverse lg:flex-row items-center justify-end">
+                <!-- Left -->
+                <div class="w-full lg:w-1/2 lg:max-w-lg md:text-center lg:text-start">
+                    <!-- Text Hero -->
+                    <h3 class="text-color-sub-text text-xs font-semibold tracking-[5px]">OUR MISSION & GOAL</h3>
+                    <h2 class="text-color-main-text text-[40px] font-bold pt-4">Realize Your Business Goals For Profit</h2>
+                    <p class="text-color-description text-base font-medium pt-6">
+                        Nunc venenalis Iorem sed risus trlstque sent per. Duls porta,  
+                        rutruni tempus, lectus risus imDerdiet tellus, sed faucibus sum ipsum ncn neque. 
+                        Curubilu r eleirend, erut ullamcorper porta. eras turpis.  
+                    </p>
+                    <div class="mt-9">
+                        <a class="py-3 px-[34px] bg-color-blue text-base text-white font-medium rounded-full" href="#">Get In Touch</a>
+                    </div>
+                </div>
+                <!-- Right -->
+                <div class="flex items-center justify-center w-full lg:w-1/2">
+                    <img class="object-cover w-full lg:max-w-2xl" src="Assets/Realize-Image.png" alt="glasses photo">
+                </div>
+            </div>
+        </section> 
+
+
+
+
+
+
+        <!-- Blog Section -->
+        <section>
+            <!-- Flex Container -->
+            <div class="container mt-[140px]">
+                <!-- Text Heading -->
+                <div class="text-center">
+                    <h2 class="text-color-main-text text-[40px] font-bold pt-6 sm:w-[426px] mx-auto">Our Regular Updated Blog Posts</h2>
+                    <p class="text-color-description text-base font-medium pt-8">
+                        tempus, lectus risus In' perdiel tellus, sed faucibus ipsum ipsurn nun neque.
+                    </p>
+                </div>
+
+                <!-- Flex Wrap Card -->
+                <div class="mt-[78px] flex flex-wrap justify-center gap-10">
+                    <!-- Card Content -->
+                    <article class="w-[350px] bg-color-body rounded-3xl pb-[35px]">
+                        <div class="flex justify-center">
+                            <img class="w-full" src="Assets/Blog/Blog-1.png" alt="Blog">
+                        </div>
+                        <div class="text-start px-6">
+                            <h4 class="text-color-sub-text text-lg pt-6 font-semibold">SEO tips and tricks for new</h4>
+                            <p class="text-color-description text-xs pt-4 font-medium">
+                                Curapitur eleifenc erat id ullarncorper porta, 
+                                eras turpis tun pus just!, a porititar ju-to ode 
+                                id oros. Proin lloborti*
+                            </p>
+                        </div>
+                    </article>
+                    <article class="w-[350px] bg-color-body rounded-3xl pb-[35px]">
+                        <div class="flex justify-center">
+                            <img class="w-full" src="Assets/Blog/Blog-2.png" alt="Blog">
+                        </div>
+                        <div class="text-start px-6">
+                            <h4 class="text-color-main-text text-lg pt-6 font-semibold">A Guide to Google SEO</h4>
+                            <p class="text-color-description text-xs pt-4 font-medium">
+                                Curapitur eleifenc erat id ullarncorper porta, 
+                                eras turpis tun pus just!, a porititar ju-to ode 
+                                id oros. Proin lloborti*
+                            </p>
+                        </div>
+                    </article>
+                    <article class="w-[350px] bg-color-body rounded-3xl pb-[35px]">
+                        <div class="flex justify-center">
+                            <img class="w-full" src="Assets/Blog/Blog-3.png" alt="Blog">
+                        </div>
+                        <div class="text-start px-6">
+                            <h4 class="text-color-main-text text-lg pt-6 font-semibold">Best Practices SEO Content</h4>
+                            <p class="text-color-description text-xs pt-4 font-medium">
+                                Curapitur eleifenc erat id ullarncorper porta, 
+                                eras turpis tun pus just!, a porititar ju-to ode 
+                                id oros. Proin lloborti*
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Search -->
+        <section class="container mt-28 py-20 lg:px-44 bg-color-light rounded-[67px]">
+            <!-- Flex Container -->
+            <div class="flex flex-col items-center justify-center lg:flex-row lg:gap-16">
+                <!-- Left -->
+                <div class="text-center lg:text-start lg:w-[500px]">
+                    <h2 class="text-[40px] text-color-main-text font-bold mb-6 lg:w-[363px]">Sign up to Our Newsletter</h2>
+                    <p class="text-base text-color-description">
+                        You need to get positive results when you 
+                        spend hard earned revenue and time.
+                    </p>
+                </div>
+                <!-- Right -->
+                <div class="mt-7">
+                    <form class="flex flex-col justify-center gap-4 sm:flex-row">
+                        <input class="py-4 px-5 sm:pr-20 rounded-[26px] text-base text-color-description outline-none" type="search" placeholder="Email...">
+                        <button class="sm:-ml-20 text-base font-medium py-4 px-8 bg-color-blue text-color-body rounded-full">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-color-footer mt-36 py-20">
+        <!-- Flex Container -->
+        <div class="container flex flex-wrap lg:flex-nowrap lg:justify-between gap-56">
+            <!-- Content -->
+            <div class="flex flex-col gap-5">
+                <img src="Assets/Footer-Logo.png" alt="Footer-Logo" class="w-[91px] h-5">
+                <p class="text-sm text-[#AFACCD] sm:w-60">
+                    Nulla non otllo venicula, ultricles lorem a, allquarn nes!. Etlam et lorem lobortls, cony allis nunc.
+                </p>
+                <div class="flex gap-3">
+                    <div>
+                        <i class="ri-facebook-fill text-white bg-color-sub-text py-2 px-2 rounded-full cursor-pointer"></i>
+                    </div>
+                    <div>
+                        <i class="ri-twitter-fill text-white bg-color-sub-text py-2 px-2 rounded-full cursor-pointer"></i>
+                    </div>
+                    <div>
+                        <i class="ri-instagram-fill text-white bg-color-sub-text py-2 px-2 rounded-full cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap lg:flex-nowrap gap-16">
+                <div class="flex flex-col gap-2">
+                    <div>
+                        <a href="#" class="text-lg text-color-body">Services</a>
+                    </div>
+                    <ul class="flex flex-col gap-1">
+                        <li>
+                            <a href="#" class="text-sm text-[#AFACCD]">Email Marketing Social</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-[#AFACCD]">Media Marketing Search</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-[#AFACCD]">Engine Optimization</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-[#AFACCD]">Prnelnct Devnionmnni</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-[#AFACCD]">Web Development</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <div>
+                        <a href="#" class="text-lg text-color-body">Support</a>
+                    </div>
+                    <ul class="flex flex-col gap-1">
+                        <li>
+                            <a href="#" class="text-sm text-[#AFACCD]">Sizicik. Community</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-[#AFACCD]">Support Documents</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-[#AFACCD]">Help:le-Lk API Documents</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-[#AFACCD]">5nvin,es Witus</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-[#AFACCD]">Email Contort</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <div>
+                        <a href="#" class="text-lg text-color-body">Contact Us</a>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p class="text-sm text-[#AFACCD]">suppariaringrozom</p>
+                        <p class="text-sm text-[#AFACCD]">(41) 84?-5E2-451</p>
+                        <p class="text-sm text-[#AFACCD]">North Cry, 547 Link Road.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Index Js -->
+    <script src="js/index.js"></script>
+</body>
+</html>
